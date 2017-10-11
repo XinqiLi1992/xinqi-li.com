@@ -9,6 +9,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     z-index: 99;
+    display: flex;
 }
 
 .modal-content {
