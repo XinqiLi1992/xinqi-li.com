@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import '../styles/Skills.css';
 import Skill from 'react-icons/lib/fa/wrench';
 import More from 'react-icons/lib/fa/plus';
-import Less from 'react-icons/lib/fa/minus';
 // let movement;
 class Skills extends Component {
 
