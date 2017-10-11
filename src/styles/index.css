@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+    color: rgba(39, 35, 37, 0.8);
+}
+
+#root {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.resume-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1024px;
+    margin: auto;
+    text-align: justify;
+}
+
+.section {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.section-icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 40px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px grey;
+    color: white;
+}
+
+.section-icon svg {
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 40px;
+}
+
+h2, h3, h4 {
+    color: #333333;
+}
+
+header {
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .resume-body {
+        margin-top: 20px;
+    }
+
+    .section {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .resume-body {
+        width: 800px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

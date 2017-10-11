@@ -1,0 +1,150 @@
+.interest {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.interest-list {
+    box-shadow: 0px 3px 3px grey;
+    padding: 0;
+}
+
+.interest-list li {
+    width: 100%;
+    display: inline-block;
+}
+
+.interest-card {
+    display: flex;
+    background-color: white;
+}
+
+.interest-icon {
+    display: inline-flex;
+    min-height: 150px;
+    width: 50%;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-icon p {
+    margin: 0;
+}
+
+.interest-detail {
+    min-height: 150px;
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-detail p {
+    font-size: 20px;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .interests {
+        margin: 10px;
+    }
+
+    .interest-icon {
+        position: relative;
+        height: 300px;
+    }
+
+    .photography-1::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        background-image: url('../images/photo1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        opacity: 0;
+        animation:fade 1s infinite;
+        -webkit-animation:fade 5s infinite;
+    }
+
+    .travelling-2::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        background-image: url('../images/travel1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        opacity: 0;
+        animation:fade 1s infinite;
+        -webkit-animation:fade 5s infinite;
+        -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+        animation-delay: 3s;
+    }
+
+    .music-1::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        background-image: url('../images/music1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        opacity: 0;
+        animation:fade 1s infinite;
+        -webkit-animation:fade 5s infinite;
+    }
+
+    .cooking-2::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        background-image: url('../images/cooking1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        opacity: 0;
+        animation:fade 1s infinite;
+        -webkit-animation:fade 5s infinite;
+        -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+        animation-delay: 3s;
+    }
+
+    .interest-detail {
+        position: relative;
+        height: 300px;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+            background-color: #ff6c5c;
+        }
+
+        50% {
+            opacity: 0.8;
+            background-color: #ff6c5c;
+        }
+
+        100% {
+            opacity: 0;
+            background-color: #ff6c5c;
+        }
+    }
+}

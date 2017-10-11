@@ -1,0 +1,57 @@
+.volunteering {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.volunteer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+}
+
+.volunteer-date {
+    display: inline-flex;
+    font-size: 1em;
+}
+
+.volunteer-date p svg {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.volunteer-card {
+    border-radius: 5px;
+    border-left: 5px solid #00f8ff;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.volunteer-detail h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.volunteer-title p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.job-list {
+    padding-left: 20px;
+}
+
+.job p {
+    margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .volunteer-card {
+        margin: 10px;
+    }
+}

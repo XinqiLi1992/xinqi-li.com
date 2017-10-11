@@ -1,0 +1,71 @@
+.education-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 99;
+}
+
+.modal-content {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+}
+
+.modal-header {
+    height: 30px;
+}
+
+.modal-header button {
+    color: gray;
+    font-size: 28px;
+    float: right;
+}
+
+.modal-body h1 {
+    text-align: center;
+}
+
+.modal-pic {
+    width: 100%;
+    padding: 10px;
+}
+
+.edu-pic img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.edu-text {
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+}
+
+.edu-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #00df41;
+    color: #fdfff8;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.gpa button {
+    padding: 5px;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+.modal-close-btn {
+    background-color: transparent;
+    border:none;
+}
+
+

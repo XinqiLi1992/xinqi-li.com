@@ -1,0 +1,43 @@
+.awards {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.scholar-list {
+    list-style-type: none;
+    /*padding: 5px;*/
+    padding: 0px;
+}
+
+.scholar-card {
+    border-radius: 5px;
+    border-left: 5px solid #ffbc41;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.scholar-date {
+    display: inline-flex;
+    font-size: 1em;
+}
+
+.scholar-date p svg {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.scholar-detail h4 {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .scholar-list {
+        display: flex;
+    }
+
+    .scholar-card {
+        margin: 10px;
+    }
+}

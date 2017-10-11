@@ -1,0 +1,11 @@
+.personal-content {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    padding: 20px;
+}
+
+.personal-profile {
+    animation: fade-in 1s ease-in-out;
+}
+
