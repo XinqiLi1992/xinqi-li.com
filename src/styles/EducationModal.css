@@ -10,12 +10,15 @@
     padding: 10px;
     z-index: 99;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
     padding: 5px;
     border-radius: 10px;
     background-color: white;
+    max-width: 1024px;
     width: 100%;
 }
 
@@ -69,4 +72,11 @@
     border:none;
 }
 
+
+@media screen and (min-width: 768px) {
+    .modal-content {
+        width: 80%;
+        max-width: 800px;
+    }
+}
 

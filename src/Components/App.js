@@ -17,7 +17,7 @@ class App extends Component {
 
     state = {
         information: {
-            name: 'Xinqi Lee',
+            name: 'Xinqi Li',
             address: 'Apartment 4, Irishtown Central, Golden Island, Athlone, Co. Westmeath, Ireland',
             phone: '+353831839382',
             email: 'rickyli1992@gmail.com',
