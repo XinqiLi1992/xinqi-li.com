@@ -6,7 +6,7 @@ class PersonalProfile extends Component {
         return (
             <div className="personal-profile">
                 <div className="personal-content">
-                    <p>{this.props.profileText}</p>
+                    {this.props.profileText}
                 </div>
             </div>
         );

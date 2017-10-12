@@ -13,13 +13,17 @@ class Education extends Component {
     }
 
     showModal = (edu) => {
+        document.body.style.height = '100%';
+        document.body.style.overflow = 'hidden';
         this.setState((state) => ({
             isShow: true,
             target: edu ? edu : {}
         }))
     };
 
-    hideModal = () => {
+    hideModal = (e) => {
+        document.body.style.height = '';
+        document.body.style.overflow = '';
         this.setState((state) => ({
             isShow: false,
             target: {}
@@ -41,6 +45,7 @@ class Education extends Component {
                                 <div className="education-head">
                                     <h3>{edu.degree}</h3>
                                     <p>{edu.university}</p>
+                                    <p><b>{edu.honours}</b></p>
                                     <div className="education-date">
                                         <p><Calendar/></p>
                                         <p><b>{edu.date}</b></p>
@@ -54,7 +59,7 @@ class Education extends Component {
                         </li>
                     ))}
                 </ul>
-                {this.state.isShow ? (<EducationModal eduInfo={this.state.target} onHideModal={this.hideModal}/>
+                {this.state.isShow ? (<EducationModal eduInfo={this.state.target} onHideModal={(e) => this.hideModal(e)}/>
                 ):(<div></div>)
                 }
             </div>

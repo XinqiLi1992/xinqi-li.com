@@ -9,3 +9,14 @@
     animation: fade-in 1s ease-in-out;
 }
 
+.personal-content p a {
+    color: rgba(39, 35, 37, 0.8);
+}
+
+.personal-content p a:hover {
+    color: rgba(116, 103, 110, 0.8);
+}
+
+.personal-content p a:visited {
+    text-decoration: none;
+}

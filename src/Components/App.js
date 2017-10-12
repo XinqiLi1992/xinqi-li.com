@@ -28,20 +28,24 @@ class App extends Component {
             github: 'https://github.com/XinqiLi1992'
 
         },
-        profile: 'Highly motivated and hardworking computer science graduate with a first class honours degree from University College Dublin. ' +
-                 'Currently finishing second Master’s Degree in Data Science at University College Cork. ' +
-                 'Highly skilled in designing, programming and data analysing. ' +
-                 'Looking to secure a graduate position in the IT field where both my programming skills and data analytics skills can be fully utilised.',
+        profile: <p>Highly motivated and hardworking postgraduate looking to secure a role in frontend engineering or other related IT field with a progressive company in Ireland.
+            I hold a MSc degree in Computer Science from <a target='_blank' rel='noopener noreferrer' href="http://www.ucd.ie">UCD</a> and a MSc in Data Science from <a target='_blank' rel='noopener noreferrer' href="http://www.ucc.ie">UCC</a> for which I recieved first class honours in both.
+            This website was made by me in JavaScript & React, the source code is available on my GitHub.</p>,
         education: [
             {
                 university: 'University College Cork, Cork, Ireland',
                 degree: 'MSc. Data Science & Analytics',
+                honours: 'First class honours',
                 gpa: '74%',
-                date: '09/2016 - present',
-                description:'A data mining task which predicts a movie\'s success based on audience\'s reviews on Twitter. ' +
-                'Firstly, the tweets will be classified into Positive, Negative and Neutral. ' +
-                'Then an optimised prediction model will be built using the volume of tweets in ' +
-                'each category as well as other relevant attributes.',
+                date: '09/2016 - 10/2017',
+                description:<div>
+                    <p>A one-year master with focus on Programming and Data Analytics.</p>
+                    <p><b>Courses:</b><br/>Large Scale Application Development, Database Technology, Analysis of Networks and Complex Systems,
+                        Data Mining, Information Storage and Retrieval, Generalised Linear Modeling, Multivariate Analysis, Foundations of Statistical Analytics, Operations Research.
+                    </p>
+                    <p>Final project was a Twitter data mining task which predicts movies success using both lexicon-based and machine learning approaches.</p>
+                </div>,
+                logo:require('../images/ucc_logo.png'),
                 showDetail: false
             },
             {
@@ -50,10 +54,12 @@ class App extends Component {
                 honours: 'First class honours',
                 gpa: '3.76/4.2',
                 date: '09/2015 - 09/2016',
-                description:'A data mining task which predicts a movie\'s success based on audience\'s reviews on Twitter. ' +
-                'Firstly, the tweets will be classified into Positive, Negative and Neutral. ' +
-                'Then an optimised prediction model will be built using the volume of tweets in ' +
-                'each category as well as other relevant attributes.',
+                description: <div>
+                    <p>Negotiated Learning MSc in Computer Science, all courses were hand picked but mostly software engineering focused. Intensive one-year master.</p>
+                    <p><b>Courses:</b><br/> Java Technologies, Java-based Data Structures, iOS Development, Ruby, Network and Internet Systems, Game Development, Data Science in Python.</p>
+                    <p>Final project was design and implementation of an iOS Twitter client with tweet recommendation system backend.</p>
+                </div>,
+                logo:require('../images/ucd_logo.png'),
                 showDetail: false
             },
 
@@ -62,7 +68,11 @@ class App extends Component {
                 degree:'Software Engineering',
                 gpa: '3.4/4.0',
                 date: '09/2014 - 06/2015',
-                description:'One-year period exchange student programme.',
+                description:<div>
+                    <p>A one-year period exchange student programme which was fully funded by the Chinese Scholarship Council.</p>
+                    <p><b>Courses:</b><br/>Distributed System, Database System, Software Testing, Mobile Application Design, C++ Programming</p>
+                </div>,
+                logo:require('../images/ul_logo.png'),
                 showDetail: false
             },
             {
@@ -70,7 +80,11 @@ class App extends Component {
                 degree: 'BSc. Software Engineering',
                 gpa: '79.77%',
                 date: '08/2011 - 09/2015',
-                description:'Bachelor\'s degree in Harbin Engineering University.',
+                description:<div>
+                    <p>BSc. in Software Engineering</p>
+                    <p><b>Courses:</b><br/>C++ programming, Java, Android Development, Software Engineering, Software Testing, IT English, Database System</p>
+                </div>,
+                logo:require('../images/heu_logo.png'),
                 showDetail: false
             }
         ],
