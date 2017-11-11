@@ -17,7 +17,9 @@ class Skills extends Component {
         } else {
             for(let i=0; i < skills.length; i++) {
                 skills[i].style.display = 'block';
-                skills[i].style.width = Object.values(section.value)[i];
+                let values = section.value;
+                // skills[i].style.width = Object.values(values)[i];
+                skills[i].style.width = Object.keys(values).map((key) => values[key])[i];
                 skills[i].childNodes[0].childNodes[1].style.opacity = 1;
                 // e.currentTarget.childNodes[0].appendChild();
             }
